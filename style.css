@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-fluid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+img {
+  width: 9rem;
+  border-radius: 0.3rem;
+}
+
+.row {
+  text-align: center;
+}
+
+.col {
+  margin-top: 0.4rem;
+}
+
+h3 {
+  color: rgb(3, 3, 56);
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding-top: 0.3rem;
+}
+
+h5 {
+  color: rgb(138, 138, 154);
+  font-size: 0.5rem;
+  font-weight: normal;
+}
+
+p {
+  color: rgb(138, 138, 154);
+  font-size: 0.5rem;
+  display: none;
+}
+
+.show img {
+  width: 1.3rem;
+  padding-right: 0.6rem;
+  position: relative;
+  top: -1rem;
+}
+
+.col div {
+  display: none;
+}
+
+.col:hover h5 {
+  display: none;
+}
+
+.col:hover p {
+  display: block;
+}
+
+.col:hover div {
+  display: block;
+}
+
+.col:hover {
+  transform: scale(1.2);
+}
+
+@media screen and (min-device-width: 100px) and (max-device-width: 1000px) {
+  p {
+    color: rgb(138, 138, 154);
+    font-size: 0.5rem;
+    display: block;
+  }
+
+  .col div {
+    display: block;
+  }
+}
+
+@media screen and (min-device-width: 50px) and (max-device-width: 339px) {
+  .back {
+    margin-top: 25rem;
+  }
+}
